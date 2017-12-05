@@ -95,9 +95,8 @@
 </template>
 
 <script>
-import { fetchList,AddUser,UpdataUser,DeleteUser } from '@/api/user'
+import { fetchList, AddUser, UpdataUser, DeleteUser } from '@/api/user'
 import waves from '@/directive/waves/index.js' // 水波纹指令
-import { parseTime } from '@/utils'
 export default {
   name: 'table_demo',
   directives: {

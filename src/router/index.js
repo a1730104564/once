@@ -47,12 +47,15 @@ export const asyncRouterMap = [
   {
     path: '/users',
     component: Layout,
-    redirect: 'noredirect',
+    redirect: '/users/usersList',
     name: 'users',
     icon: 'excal',
-    children: [
-      { path: 'list', component: _import('users/usersList'), name: '表格' }
-    ]
+    children: [{
+      path: 'list',
+      component: _import('users/usersList'),
+      name: 'users',
+      meta: { title: 'users' }
+    }]
   },
   { path: '*', redirect: '/404', hidden: true }
 ]
